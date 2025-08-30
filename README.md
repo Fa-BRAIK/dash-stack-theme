@@ -54,6 +54,19 @@ use Nuxtifyts\DashStackTheme\DashStackThemePlugin;
 $panel->plugin(DashStackThemePlugin::make());
 ```
 
+#### Step 4: Add DashStack to your vite config:
+
+Add DashStack theme to your `vite.config.js`:
+
+```javascript
+input: [
+   // ...
+   'vendor/nuxtifyts/dash-stack-theme/resources/css/theme.css',
+],
+```
+
+> For more information on using theme, check [filament docs](https://filamentphp.com/docs/4.x/styling/overview#creating-a-custom-theme).
+
 Configuration
 -
 
