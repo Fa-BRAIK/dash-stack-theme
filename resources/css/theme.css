@@ -1,6 +1,5 @@
-@import './login.css';
-
-@config 'tailwind.config.js';
+@import "../../../../../vendor/filament/filament/resources/css/theme.css";
+@import "./login.css";
 
 :root {
     --ds-dark-bg-primary-color: #1B2431;

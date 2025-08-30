@@ -64,8 +64,8 @@ Add DashStack theme to your `vite.config.js`:
 
 ```javascript
 input: [
-   // ...
-   'vendor/nuxtifyts/dash-stack-theme/resources/css/theme.css',
+  // ...
+  'vendor/nuxtifyts/dash-stack-theme/resources/css/theme.css',
 ],
 ```
 
