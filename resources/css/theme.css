@@ -455,7 +455,7 @@
 
                         .fi-ta-record {
                             @apply rounded-3xl ring-0 shadow-sm bg-gray-50 dark:bg-[var(--ds-dark-bg-tertiary-color)];
-                            @apply bg-[url(/vendor/nuxtifyts/dash-stack-theme/card-bg-pattern.svg)];
+                            @apply bg-[url(/_filament-dash-stack-theme/assets/card-bg-pattern.svg)];
                         }
                     }
                     /* Table Component 2.1.2 End */
@@ -483,6 +483,7 @@
     @apply rounded-md sm:rounded-lg;
     @apply py-1 px-3 sm:py-2 sm:px-4;
     @apply text-sm sm:text-base;
+    @apply text-white;
 
     .fi-btn-label {
         @apply text-sm sm:text-base;
