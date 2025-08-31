@@ -2,7 +2,7 @@
 .fi-simple-layout {
     > .fi-simple-main-ctn {
         @apply bg-[#4880FF] dark:bg-[var(--ds-dark-bg-primary-color)];
-        @apply bg-[url(/_dash-stack-theme/assets/dash-stack-shape.svg)];
+        @apply bg-[url(/_filament-dash-stack-theme/assets/dash-stack-shape.svg)];
         @apply bg-no-repeat bg-cover;
 
         > .fi-simple-main {
