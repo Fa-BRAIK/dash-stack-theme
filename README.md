@@ -34,6 +34,10 @@ Installation
 composer require nuxtifyts/dash-stack-theme
 ```
 
+> For Filament 3:
+> If you're still using Filament v3: run this command instead
+> `composer require nuxtifyts/dash-stack-theme:"^1.3"
+
 #### Step 2: Run install command:
 
 Running this command will install required npm packages (If they're not already installed), and it will publish its assets as well.
@@ -60,8 +64,8 @@ Add DashStack theme to your `vite.config.js`:
 
 ```javascript
 input: [
-   // ...
-   'vendor/nuxtifyts/dash-stack-theme/resources/css/theme.css',
+  // ...
+  'vendor/nuxtifyts/dash-stack-theme/resources/css/theme.css',
 ],
 ```
 

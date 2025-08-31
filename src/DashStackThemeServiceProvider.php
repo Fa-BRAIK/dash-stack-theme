@@ -21,17 +21,14 @@ class DashStackThemeServiceProvider extends PackageServiceProvider
             ->name(self::PACKAGE_NAME)
             ->hasConfigFile(self::CONFIG_FILE_NAME)
             ->hasViews()
-            ->hasAssets()
             ->hasCommands(...self::commandsClassStrings());
     }
 
-    /**
-     * @return $this
-     */
-    public function boot()
+    public function bootingPackage(): void
     {
-        return parent::boot()
-            ->bootDefaultFont();
+        $this
+            ->bootDefaultFont()
+            ->bootAssetsManager();
     }
 
     protected function bootDefaultFont(): static
@@ -44,6 +41,13 @@ class DashStackThemeServiceProvider extends PackageServiceProvider
                 ),
             ]);
         }
+
+        return $this;
+    }
+
+    protected function bootAssetsManager(): static
+    {
+        app(Support\Assets\Manager::class)->boot();
 
         return $this;
     }
