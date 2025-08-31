@@ -1,4 +1,4 @@
-@import "../../../../../vendor/filament/filament/resources/css/theme.css";
+@import '../../../../../vendor/filament/filament/resources/css/theme.css';
 @import "./login.css";
 
 :root {
@@ -142,37 +142,37 @@
         @apply bg-white dark:bg-[var(--ds-dark-bg-secondary-color)];
         @apply border-r-[0.9px] border-r-[#E0E0E0] dark:border-none;
         @apply py-4 px-0;
-    
+
         > .fi-sidebar-nav-groups {
             @apply gap-y-4 -mr-4;
-    
+
             > .fi-sidebar-group  {
                 > .fi-sidebar-group-button {
                     @apply pl-14 pr-6 mt-2 rtl:pl-6 rtl:pr-14;
-    
+
                     > .fi-icon-btn, > .fi-sidebar-group-label {
                         @apply text-gray-600 dark:text-gray-300;
                     }
                 }
-    
+
                 > .fi-sidebar-group-items {
                     > .fi-sidebar-item {
                         @apply relative px-10 rtl:pr-14 rtl:pl-6;
-    
+
                         > .fi-sidebar-item-button {
                             @apply bg-white dark:bg-[var(--ds-dark-bg-secondary-color)];
                             @apply px-4 py-3 gap-x-6;
-    
+
                             > .fi-sidebar-item-icon, > .fi-sidebar-item-label {
                                 @apply text-gray-800 dark:text-white font-semibold;
                             }
                         }
                     }
-    
+
                     > .fi-sidebar-item.fi-sidebar-item-active {
                         > .fi-sidebar-item-button {
                             @apply bg-primary-600;
-                            
+
                             > .fi-sidebar-item-icon, > .fi-sidebar-item-label {
                                 @apply text-white;
                             }
@@ -182,18 +182,18 @@
                             }
                         }
                     }
-    
+
                     > .fi-sidebar-item::after {
                         content: '';
                         @apply absolute left-0 rtl:right-4 top-0 w-4 h-full rounded-lg;
                     }
-    
+
                     > .fi-sidebar-item.fi-sidebar-item-active::after {
                         @apply bg-primary-600;
                     }
                 }
             }
-    
+
             > .fi-sidebar-group:not(:first-child) {
                 @apply border-t-[0.6px] border-t-[#E0E0E0] dark:border-white/10;
             }
@@ -217,19 +217,19 @@
         @apply bg-white dark:bg-[var(--ds-dark-bg-secondary-color)];
         @apply border-r-[0.9px] border-r-[#E0E0E0] dark:border-none;
         @apply py-4 px-0;
-    
+
         > .fi-sidebar-nav-groups {
             @apply gap-y-4 -mr-4;
-    
+
             > .fi-sidebar-group  {
                 > .fi-sidebar-group-button {
                     @apply pl-14 pr-6 mt-2 rtl:pl-6 rtl:pr-14;
-    
+
                     > .fi-icon-btn, > .fi-sidebar-group-label {
                         @apply text-gray-600 dark:text-gray-300;
                     }
                 }
-    
+
                 > .fi-sidebar-group-items {
                     > .fi-sidebar-item {
                         @apply relative rtl:pr-8;
@@ -237,13 +237,13 @@
                         > .fi-sidebar-item-button {
                             @apply bg-white dark:bg-[var(--ds-dark-bg-secondary-color)];
                             @apply px-4 py-3 gap-x-6;
-    
+
                             > .fi-sidebar-item-icon, > .fi-sidebar-item-label {
                                 @apply text-gray-800 dark:text-white font-semibold;
                             }
                         }
                     }
-    
+
                     > .fi-sidebar-item.fi-sidebar-item-active {
                         > .fi-sidebar-item-button {
                             > .fi-sidebar-item-icon, > .fi-sidebar-item-label {
@@ -251,12 +251,12 @@
                             }
                         }
                     }
-     
+
                     > .fi-sidebar-item::after {
                         content: '';
                         @apply absolute left-0 rtl:right-4 top-0 w-4 h-full rounded-lg;
                     }
-    
+
                     > .fi-sidebar-item.fi-sidebar-item-active::after {
                         @apply bg-primary-600;
                     }
@@ -302,7 +302,7 @@
     .fi-header {
         @apply pb-6;
     }
-    
+
     /* Table Component Start */
     .fi-ta-content {
         > .fi-ta-table {
@@ -345,7 +345,7 @@
             .fi-ta-table {
                 thead {
                     > tr {
-                        .fi-ta-actions-header-cell, 
+                        .fi-ta-actions-header-cell,
                         .fi-ta-header-cell,
                         .fi-ta-cell {
                             @apply bg-primary-100/10 dark:bg-[var(--ds-dark-bg-tertiary-color)];
@@ -429,7 +429,7 @@
                     }
                 }
             }
-            
+
             /* Table Component 2.1 Start */
             > div {
                 &:first-child {

@@ -46,32 +46,15 @@ class FilamentDashStackThemeInstallCommand extends Command
 
         $this->info("Using NPM version {$npmVersionResult->output()} to installed dependencies.");
 
-        $npmInstallResult = Process::run('npm install tailwindcss @tailwindcss/forms @tailwindcss/typography postcss autoprefixer --save-dev');
+        $npmInstallResult = Process::run('npm install tailwindcss @tailwindcss/vite @tailwindcss/forms @tailwindcss/typography --save-dev');
 
         $this->info($npmInstallResult->output());
-
-        $postcssConfigPath = base_path('postcss.config.js');
-
-        if (! File::exists($postcssConfigPath)) {
-            $this->info('No postcss.config.js file found. Creating one for you...');
-
-            File::copy(__DIR__.'/../../stubs/postcss.config.js', $postcssConfigPath);
-
-            $this->info('postcss.config.js file created.');
-        }
 
         $this->info('Running NPM build...');
 
         $npmBuildResult = Process::run('npm install && npm run build');
 
         $this->info($npmBuildResult->output());
-
-        $this->info('Publishing assets...');
-
-        $this->call('vendor:publish', [
-            '--tag' => DashStackThemeServiceProvider::PACKAGE_NAME.'-assets',
-            '--force' => true,
-        ]);
 
         return static::SUCCESS;
     }
