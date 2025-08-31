@@ -2,7 +2,6 @@
 
 namespace Nuxtifyts\DashStackTheme\Http\Controllers;
 
-use Illuminate\Http\File;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Throwable;

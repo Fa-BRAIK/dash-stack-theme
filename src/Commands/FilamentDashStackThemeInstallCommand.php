@@ -3,9 +3,7 @@
 namespace Nuxtifyts\DashStackTheme\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
-use Nuxtifyts\DashStackTheme\DashStackThemeServiceProvider;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand('filament-dash-stack-theme:install')]
